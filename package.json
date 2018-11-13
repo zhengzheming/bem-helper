@@ -1,5 +1,5 @@
 {
-  "name": "bem-helper",
+  "name": "vue-bem-helper",
   "version": "1.0.0",
   "description": "bem helper for vue",
   "main": "index.js",
