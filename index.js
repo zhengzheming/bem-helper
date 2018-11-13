@@ -32,7 +32,9 @@ export default {
   methods: {
     b(el, mods) {
       const { name } = this.$options;
-
+      if (typeof el == 'string') {
+        el = el.replace(/^./, m => m.toLowerCase()).replace(/[A-Z]/g, (m) =>  '-' + m.toLowerCase())
+      }
       if (el && typeof el !== 'string') {
         mods = el;
         el = '';
